@@ -147,36 +147,6 @@
         // Defining the hash before the main bundle allows the bundle access window.hash
         window.wordle = window.wordle || {};
         window.wordle.hash = 'parle v220317';
-        
-        setTimeout(() => {
-          const gameState = {
-   "boardState":[
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
-   "evaluations":[
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-   ],
-   "rowIndex":0,
-   "solution":"marta",
-   "gameStatus":"IN_PROGRESS",
-   "lastPlayedTs":null,
-   "lastCompletedTs":null,
-   "restoringFromLocalStorage":null,
-   "hardMode":false
-}
-          window.localStorage.setItem("gameState", JSON.stringify(gameState))
-          
-        }, 1 * 1000)
       })();
     </script>
     <script src="wordle-it.js"></script>
