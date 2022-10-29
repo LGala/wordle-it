@@ -930,7 +930,7 @@ P
               var e = this;
               this.shadowRoot.appendChild(qa.content.cloneNode(!0));
               var a = this.shadowRoot.querySelector(".toast");
-              a.textContent = this.getAttribute("text"), this._duration = this.getAttribute("duration") || 1e3, "Infinity" !== this._duration && setTimeout((function() {
+              a.textContent = this.getAttribute("text"), this._duration = 5000 || 1e3, "Infinity" !== this._duration && setTimeout((function() {
                   a.classList.add("fade")
               }), this._duration), a.addEventListener("transitionend", (function(a) {
                   e.parentNode.removeChild(e)
